@@ -62,7 +62,7 @@ header {
     transform-origin: left;
 }
 
-.navigation #btnlogin-popup {
+#btnlogin-popup {
     width: 130px;
     height: 50px;
     border: 2px solid #fff;
@@ -214,4 +214,54 @@ header {
 
 .login-register p a:hover {
     text-decoration: underline;
+}
+
+
+
+#navbar {
+    background: transparent;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+
+#logo span {
+    color: #ffa500;
+}
+
+.navbar-toggler span {
+    color: #ffa500;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5 ease;
+}
+
+.nav-item .nav-link:hover {
+    background: #ffa500;
+    color: white;
+}
+
+#navbar form button {
+    background: orange;
+    color: white;
+    border: none;
+}
+
+#ul {
+    margin-left: 150px;
 }
