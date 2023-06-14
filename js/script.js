@@ -78,5 +78,5 @@ function mouse() {
 }
 function mouse1() {
     let mouse1 = document.getElementById("btnlogin-popup");
-    mouse1.innerHTML = "log in"
+    mouse1.innerHTML = "Log in"
 }
