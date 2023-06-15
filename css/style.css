@@ -235,7 +235,8 @@ header {
 }
 
 .navbar-toggler span {
-    color: #ffa500;
+    color: #2600ff;
+    font-size: 30px;
 }
 
 .navbar-nav {
@@ -264,4 +265,8 @@ header {
 
 #ul {
     margin-left: 150px;
+}
+
+#id {
+    z-index: 10000;
 }
