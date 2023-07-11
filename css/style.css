@@ -12,6 +12,23 @@
     --bg-color: #162938;
 }
 
+.form-box #btn2 {
+    width: 100px;
+    height: 40px;
+    background-color: #162938;
+    color: white;
+    border-radius: 7px;
+    /* padding: 10px; */
+}
+.form-box #btn3 {
+    width: 100px;
+    height: 40px;
+    background-color: #162938;
+    color: white;
+    border-radius: 7px;
+    /* padding: 10px; */
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -72,9 +89,14 @@ header {
     transition: .5s;
 }
 
+.form-box {
+    padding: 3rem 1rem;
+    width: 80%;
+}
+
 .wrapper {
-    width: 400px;
-    height: 440px;
+    width: 370px;
+    height: 420px;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
     backdrop-filter: blur(20px);
@@ -88,7 +110,7 @@ header {
 }
 
 .wrapper.active {
-    height: 520px;
+    height: 490px;
 }
 
 

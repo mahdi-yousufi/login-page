@@ -60,7 +60,7 @@
         <span class="icon-close position-absolute text-white d-flex justify-content-center align-items-center">
             <ion-icon name="close-outline"></ion-icon>
         </span>
-        <div class="form-box login p-5 w-100">
+        <div class="form-box login w-100">
             <h2 class="text-center">Login</h2>
             <form action="#" name="form">
                 <div class="input-box position-relative w-100 my-4 mx-0">
@@ -81,14 +81,14 @@
                     <label><input type="checkbox">Remember me</label>
                     <a href="#" class="text-decoration-none">Forgot password?</a>
                 </div>
-                <button type="submit" class="btn w-100 text-white" onclick="validate()">Login</button>
+                <button id="btn2" type="submit" class="w-100 text-white" onclick="validate()">Login</button>
                 <div class="login-register text-center">
                     <p>Do not have an account?<a href="#" class="register-link text-decoration-none">Register</a></p>
                 </div>
             </form>
 
         </div>
-        <div class="form-box register position-absolute p-5 w-100">
+        <div class="form-box box register position-absolute  w-100">
             <h2 class="text-center">Registration</h2>
             <form action="#" name="form1">
                 <div class="input-box position-relative w-100 my-4 mx-0">
@@ -115,7 +115,9 @@
                 <div class="remember-forgot d-flex justify-content-between">
                     <label><input type="checkbox">Agree to the terms & conditions</label>
                 </div>
-                <button type="submit" class="btn w-100 text-white" onclick="validate1()">Register</button>
+                <button id="btn3" type="submit" class="w-100 text-white" onclick="validate1()">Register</button>
+
+
                 <div class="login-register text-center">
                     <p>Already have an account?<a href="#" class="login-link">Login</a></p>
                 </div>
@@ -123,6 +125,28 @@
 
         </div>
     </div>
+    <script>
+        let emailInput = document.forms["form"]["email"];
+        let passwordInput = document.forms["form"]["Password"];
+// 
+      
+        var btn = document.querySelector("#btn2")
+            var position;
+            btn.addEventListener("mouseover", () => {
+                position ? (position = 0) : (position = 150);
+                btn.style.transform = `translate(${position}px,0px)`
+                btn.style.transition = "all 0.1s ease"
+            })
+
+
+        var btn1 = document.querySelector("#btn3")
+        var position1;
+        btn1.addEventListener("mouseover", () => {
+            position1 ? (position1 = 0) : (position1 = 150);
+            btn1.style.transform = `translate(${position1}px,0px)`
+            btn1.style.transition = "all 0.1s ease"
+        })
+    </script>
     <script src="js/script.js"></script>
     <script src="js/jquery-3.6.3.js"></script>
 
